@@ -400,6 +400,21 @@ header nav ul li:hover {
     width: 100%;
   }
 }
+#hero #intro p {
+  margin: 4rem 0;
+  padding: 2rem;
+  line-height: 1.4rem;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#hero #intro p span {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  #hero #intro p {
+    margin: 4rem 0 0.5rem;
+  }
+}
 #hero #info {
   margin: 0 1rem;
   width: 500px;
@@ -410,30 +425,23 @@ header nav ul li:hover {
     margin: 0;
   }
 }
-#hero p {
-  margin: 4rem 0;
-  padding: 2rem;
-  line-height: 1.4rem;
-  color: #FFFFFF;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-#hero p span {
-  font-size: 1.2rem;
-}
-@media screen and (max-width: 768px) {
-  #hero p {
-    margin: 4rem 0 0.5rem;
-  }
-}
-#hero ul {
+#hero #info ul {
   margin: 2rem 0;
   padding: 0;
 }
-#hero ul li {
+#hero #info ul li {
   list-style-type: none;
   padding: 1rem;
   margin: 0 0 1rem;
   background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#hero #info ul li i {
+  padding-right: 0.25rem;
+}
+#hero #info ul li:hover {
+  transform: scale(1.02);
 }
 
 #articles {
@@ -456,6 +464,9 @@ header nav ul li:hover {
   padding: 0 0.5rem;
   font-weight: normal;
   font-size: 0.9rem;
+}
+#articles .heading h3 i {
+  padding-right: 0.5rem;
 }
 #articles .heading p {
   font-size: 1rem;
@@ -485,12 +496,18 @@ header nav ul li:hover {
   padding: 1rem 1rem;
   background-color: #FFFFFF;
   list-style-type: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   #articles ul li {
     width: 100%;
     margin: 0 0 1rem 0;
   }
+}
+#articles ul li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 1rem 1rem hsla(0deg, 0%, 0%, 0.08);
 }
 #articles ul li h3 {
   font-size: 1rem;
@@ -562,6 +579,10 @@ footer .sns_icons img {
   width: 32px;
   height: 32px;
   margin-right: 0.5rem;
+  transition: transform 0.2s;
+}
+footer .sns_icons img:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=main.css.map */
