@@ -1,0 +1,213 @@
+/** CONTENT SIZE **/
+/** COLOR **/
+/* Billiard Green */
+/* Ecru Beige */
+/* Amber */
+/* Teal */
+/* Wine red */
+/* Amber */
+/* Teal */
+/* Yale Blue */
+/** FONT SIZE **/
+/** MARGIN AND PADDING SIZE **/
+/** MARGIN CLASS **/
+.m {
+  margin: 1rem;
+}
+.m_ss {
+  margin: 0.25rem;
+}
+.m_s {
+  margin: 0.5rem;
+}
+.m_m {
+  margin: 1rem;
+}
+.m_l {
+  margin: 2rem;
+}
+.m_ll {
+  margin: 4rem;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+.mt_ss {
+  margin-top: 0.25rem;
+}
+.mt_s {
+  margin-top: 0.5rem;
+}
+.mt_m {
+  margin-top: 1rem;
+}
+.mt_l {
+  margin-top: 2rem;
+}
+.mt_ll {
+  margin-top: 4rem;
+}
+
+.ml {
+  margin-left: 1rem;
+}
+.ml_ss {
+  margin-left: 0.25rem;
+}
+.ml_s {
+  margin-left: 0.5rem;
+}
+.ml_m {
+  margin-left: 1rem;
+}
+.ml_l {
+  margin-left: 2rem;
+}
+.ml_ll {
+  margin-left: 4rem;
+}
+
+.mr {
+  margin-right: 1rem;
+}
+.mr_ss {
+  margin-right: 0.25rem;
+}
+.mr_s {
+  margin-right: 0.5rem;
+}
+.mr_m {
+  margin-right: 1rem;
+}
+.mr_l {
+  margin-right: 2rem;
+}
+.mr_ll {
+  margin-right: 4rem;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+.mb_ss {
+  margin-bottom: 0.25rem;
+}
+.mb_s {
+  margin-bottom: 0.5rem;
+}
+.mb_m {
+  margin-bottom: 1rem;
+}
+.mb_l {
+  margin-bottom: 2rem;
+}
+.mb_ll {
+  margin-bottom: 4rem;
+}
+
+/** PADDING CLASS **/
+.p {
+  padding: 1rem;
+}
+.p_ss {
+  padding: 0.25rem;
+}
+.p_s {
+  padding: 0.5rem;
+}
+.p_m {
+  padding: 1rem;
+}
+.p_l {
+  padding: 2rem;
+}
+.p_ll {
+  padding: 4rem;
+}
+
+.pt {
+  padding-top: 1rem;
+}
+.pt_ss {
+  padding-top: 0.25rem;
+}
+.pt_s {
+  padding-top: 0.5rem;
+}
+.pt_m {
+  padding-top: 1rem;
+}
+.pt_l {
+  padding-top: 2rem;
+}
+.pt_ll {
+  padding-top: 4rem;
+}
+
+.pl {
+  padding-left: 1rem;
+}
+.pl_ss {
+  padding-left: 0.25rem;
+}
+.pl_s {
+  padding-left: 0.5rem;
+}
+.pl_m {
+  padding-left: 1rem;
+}
+.pl_l {
+  padding-left: 2rem;
+}
+.pl_ll {
+  padding-left: 4rem;
+}
+
+.pr {
+  padding-right: 1rem;
+}
+.pr_ss {
+  padding-right: 0.25rem;
+}
+.pr_s {
+  padding-right: 0.5rem;
+}
+.pr_m {
+  padding-right: 1rem;
+}
+.pr_l {
+  padding-right: 2rem;
+}
+.pr_ll {
+  padding-right: 4rem;
+}
+
+.pb {
+  padding-bottom: 1rem;
+}
+.pb_ss {
+  padding-bottom: 0.25rem;
+}
+.pb_s {
+  padding-bottom: 0.5rem;
+}
+.pb_m {
+  padding-bottom: 1rem;
+}
+.pb_l {
+  padding-bottom: 2rem;
+}
+.pb_ll {
+  padding-bottom: 4rem;
+}
+
+/**
+ * mixins
+ * http://bashalog.c-brains.jp/19/07/29-170136.php
+ */
+/**
+ * extends
+ */
+
+/*# sourceMappingURL=util.css.map */

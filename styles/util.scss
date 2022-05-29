@@ -1,0 +1,157 @@
+/** CONTENT SIZE **/
+$content_width: 1200px;
+
+/** COLOR **/
+$color_main: #004840; /* Billiard Green */
+$color_base: #F7F7F0;
+$color_accent: #ffbf00; /* Amber */
+$color_main_darken: #26312f;
+$color_main_lighten: #008080; /* Teal */
+
+$color_red: #960018; /* Wine red */
+$color_yellow: #ffbf00; /* Amber */
+$color_green: #008080; /* Teal */
+$color_blue: #1e50a2; /* Yale Blue */
+
+$color_white: #FFFFFF;
+$color_light: #EFEFEF;
+$color_lightgray: #CCCCCC;
+$color_gray: #999999;
+$color_darkgray: #666666;
+$color_dark: #333333;
+$color_black: #000000;
+
+/** FONT SIZE **/
+$font_lll: 1.4rem;
+$font_ll: 1.2rem;
+$font_l: 1.1rem;
+$font_m: 1rem;
+$font_s: .9rem;
+$font_ss: .8rem;
+$font_sss: .75rem;
+
+/** MARGIN AND PADDING SIZE **/
+$space_default: 1rem;
+$space_sss: .1rem;
+$space_ss: .25rem;
+$space_s: .5rem;
+$space_m: 1rem;
+$space_l: 2rem;
+$space_ll: 4rem;
+
+
+$size_default: 1rem;
+$size_sss: .1rem;
+$size_ss: .25rem;
+$size_s: .5rem;
+$size_m: 1rem;
+$size_l: 2rem;
+$size_ll: 4rem;
+
+/** MARGIN CLASS **/
+.m {
+    margin: $space_default;
+    &_ss { margin: $space_ss; }
+    &_s { margin: $space_s; }
+    &_m { margin: $space_m; }
+    &_l { margin: $space_l; }
+    &_ll { margin: $space_ll; }
+}
+.mt {
+    margin-top: $space_default;
+    &_ss { margin-top: $space_ss; }
+    &_s { margin-top: $space_s; }
+    &_m { margin-top: $space_m; }
+    &_l { margin-top: $space_l; }
+    &_ll { margin-top: $space_ll; }
+}
+.ml {
+    margin-left: $space_default;
+    &_ss { margin-left: $space_ss; }
+    &_s { margin-left: $space_s; }
+    &_m { margin-left: $space_m; }
+    &_l { margin-left: $space_l; }
+    &_ll { margin-left: $space_ll; }
+}
+.mr {
+    margin-right: $space_default;
+    &_ss { margin-right: $space_ss; }
+    &_s { margin-right: $space_s; }
+    &_m { margin-right: $space_m; }
+    &_l { margin-right: $space_l; }
+    &_ll { margin-right: $space_ll; }
+}
+.mb {
+    margin-bottom: $space_default;
+    &_ss { margin-bottom: $space_ss; }
+    &_s { margin-bottom: $space_s; }
+    &_m { margin-bottom: $space_m; }
+    &_l { margin-bottom: $space_l; }
+    &_ll { margin-bottom: $space_ll; }
+}
+/** PADDING CLASS **/
+.p {
+    padding: $space_default;
+    &_ss { padding: $space_ss; }
+    &_s { padding: $space_s; }
+    &_m { padding: $space_m; }
+    &_l { padding: $space_l; }
+    &_ll { padding: $space_ll; }
+}
+.pt {
+    padding-top: $space_default;
+    &_ss { padding-top: $space_ss; }
+    &_s { padding-top: $space_s; }
+    &_m { padding-top: $space_m; }
+    &_l { padding-top: $space_l; }
+    &_ll { padding-top: $space_ll; }
+}
+.pl {
+    padding-left: $space_default;
+    &_ss { padding-left: $space_ss; }
+    &_s { padding-left: $space_s; }
+    &_m { padding-left: $space_m; }
+    &_l { padding-left: $space_l; }
+    &_ll { padding-left: $space_ll; }
+}
+.pr {
+    padding-right: $space_default;
+    &_ss { padding-right: $space_ss; }
+    &_s { padding-right: $space_s; }
+    &_m { padding-right: $space_m; }
+    &_l { padding-right: $space_l; }
+    &_ll { padding-right: $space_ll; }
+}
+.pb {
+    padding-bottom: $space_default;
+    &_ss { padding-bottom: $space_ss; }
+    &_s { padding-bottom: $space_s; }
+    &_m { padding-bottom: $space_m; }
+    &_l { padding-bottom: $space_l; }
+    &_ll { padding-bottom: $space_ll; }
+}
+
+/**
+ * mixins
+ * http://bashalog.c-brains.jp/19/07/29-170136.php
+ */
+@mixin media-sp {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+}
+@mixin media-pc {
+    @media screen and (min-width: 769px) {
+        @content;
+    }
+}
+
+/**
+ * extends
+ */
+%layout {
+    width: $content_width;
+    @include media-sp {
+        width: 100%;
+    }
+}
