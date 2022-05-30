@@ -7,7 +7,7 @@ body {
 
 /* General Settings */
 a {
-	color: $color_main;
+	color: $color_main_lighten;
 	text-decoration: none;
 	&:hover {
 		color: $color_accent;
