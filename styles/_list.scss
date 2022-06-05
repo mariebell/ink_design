@@ -1,0 +1,41 @@
+@import "./parts/_articles.scss";
+
+#l-title {
+	box-sizing: border-box;
+	padding: $size_ll $size-m $size_m;
+	background-image: url('../../images/starbucks.jpg');
+	background-size: cover;
+	h2 {
+		color: $color_white;
+	}
+}
+#l-list {
+	box-sizing: border-box;
+	padding: $size_l $size_m $size_ll;
+	// min-width: calc($content_width + $size-m);
+	@include media-sp {
+		padding: $size_l $size_s;
+		// min-width: inherit;
+	}
+	.flexible {
+		display: flex;
+		@include media-sp {
+			display: inherit;
+		}
+	}
+	.l-articles {
+		box-sizing: border-box;
+		width: 900px;
+		@extend %articles;
+		@include media-sp {
+			width: 100%;
+		}
+	}
+	.l-aside {
+		box-sizing: border-box;
+		width: 300px;
+		@include media-sp {
+			width: 100%;
+		}
+	}
+}

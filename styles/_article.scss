@@ -1,0 +1,123 @@
+#l-article {
+	box-sizing: border-box;
+	padding: $size_l $size_m $size_ll;
+	// min-width: calc($content_width + $size-m);
+	@include media-sp {
+		padding: $size_l $size_s;
+		// min-width: inherit;
+	}
+	.l-title {
+		height: $size_ll;
+	}
+	.flexible {
+		display: flex;
+		@include media-sp {
+			display: inherit;
+		}
+	}
+	.l-main {
+		box-sizing: border-box;
+		width: 800px;
+		@extend %articles;
+		@include media-sp {
+			width: 100%;
+		}
+		.article-content {
+			box-sizing: border-box;
+			padding: $size_l + $size_m;
+			width: 800px;
+			min-height: 1000px;
+			background-color: $color_white;
+			border-radius: $size_s;
+			line-height: 2rem;
+			@extend %font-default;
+			h1 {
+        margin: 0;
+        padding: $size-m 0;
+        border-top: 2px solid $color_main;
+        border-bottom: 2px solid $color_main;
+        font-size: $font_lll;
+			}
+			h2 {
+					margin-top: $size-l;
+					padding: $size-m 0;
+					border-bottom: 3px double $color_main;
+					font-size: $font_ll;
+					&:before {
+							content: '■';
+							padding-right: $size_s;
+							color: $color_accent;
+							font-size: $font_ll;
+					}
+			}
+			h3 {
+					margin-top: $size-l;
+					padding: $size-s 0;
+					border-bottom: 1px solid $color_main;
+					font-size: $font_l;
+					&:before {
+							content: '■';
+							padding-right: $size_s;
+							color: $color_main;
+							font-size: $font_l;
+					}
+			}
+			h4 {
+					margin-top: $size-m;
+					padding: $size-ss 0;
+					border-bottom: 1px dotted $color_main;
+					font-size: $font_m;
+			}
+			h5 {
+					margin: $size-ss 0 0;
+					padding: $size-ss 0;
+					font-size: $font_m;
+			}
+			p {
+        margin: $size-m 0;
+        font-size: $font_m;
+        color: $color_dark;
+        line-height: 1.85rem;
+			}
+			ul, ol {
+					padding-top: $size-m;
+					padding-bottom: $size-m;
+					background-color: $color_light;
+					color: $color_dark;
+					font-size: $font_s;
+					line-height: $size-m + $size-s;
+
+			}
+			ul li {
+					list-style-type: square;
+			}
+			dl {
+					dt {
+							font-weight: bold;
+					}
+			}
+			a {
+					color: $color_main;
+					&:hover {
+							color: $color_accent;
+					}
+			}
+			q {
+					display: inline-block;
+					padding: $size-m;
+					font-size: $font_s;
+					color: $color_dark;
+					background-color: $color_light;
+					word-break: break-all;
+			}
+		}
+	}
+	.l-aside {
+		box-sizing: border-box;
+		width: 400px;
+		padding: 0 $size_l;
+		@include media-sp {
+			width: 100%;
+		}
+	}
+}

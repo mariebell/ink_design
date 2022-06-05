@@ -4,11 +4,13 @@
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "npx sass --watch styles/main.scss dist/css/main.css",
+    "ejs": "./ejs.sh"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "ejs": "^3.1.8",
     "normalize.css": "^8.0.1",
     "sass": "^1.51.0"
   }
