@@ -1,13 +1,14 @@
 #l-article {
 	box-sizing: border-box;
 	padding: $size_l $size_m $size_ll;
-	// min-width: calc($content_width + $size-m);
 	@include media-sp {
-		padding: $size_l $size_s;
-		// min-width: inherit;
+		padding: 0;
 	}
 	.l-title {
 		height: $size_ll;
+		@include media-sp {
+			height: 50px;
+		}
 	}
 	.flexible {
 		display: flex;
@@ -18,7 +19,6 @@
 	.l-main {
 		box-sizing: border-box;
 		width: 800px;
-		@extend %articles;
 		@include media-sp {
 			width: 100%;
 		}
@@ -31,6 +31,19 @@
 			border-radius: $size_s;
 			line-height: 2rem;
 			@extend %font-default;
+			@include media-sp {
+        width: 100%;
+        padding: $size-l $size-s;
+				border-radius: 0;
+    }
+			.ad-in-article {
+				margin: $size_l 0 0;
+				height: 225px;
+				border: 1px solid purple;
+				@include media-sp {
+					margin: $size_m 0 0;
+				}
+			}
 			h1 {
         margin: 0;
         padding: $size-m 0;
@@ -86,7 +99,6 @@
 					color: $color_dark;
 					font-size: $font_s;
 					line-height: $size-m + $size-s;
-
 			}
 			ul li {
 					list-style-type: square;
@@ -110,14 +122,61 @@
 					background-color: $color_light;
 					word-break: break-all;
 			}
+			blockquote {
+				padding: $size-l;
+				margin: $size-m 0;
+				font-size: $font_s;
+				color: $color_dark;
+				background-color: $color_light;
+				word-break: break-all;
+		}
 		}
 	}
 	.l-aside {
+		position: relative;
 		box-sizing: border-box;
 		width: 400px;
 		padding: 0 $size_l;
+		.position-fix-container.fixed {
+			width: 400px;
+			position: fixed;
+			top: $size_m;
+		}
 		@include media-sp {
 			width: 100%;
+			padding: $size_m $size_s;
+		}
+		.ad-in-aside {
+			margin-bottom: $size_m;
+			height: 225px;
+			border: 1px solid green;
+		}
+		.article-nav {
+			height: 500px;
+			border: 1px solid $color_light;
+			border-right: 0;
+			overflow-y: scroll;
+			@include media-sp {
+				display: none;
+			}
+			ul {
+				padding: 0;
+				margin: 0;
+				li {
+					list-style-type: none;
+					padding: $size_ss;
+					a {
+						display: block;
+						color: $color_gray;
+					}
+					&:hover {
+						background-color: $color_white;
+					}
+					&.h3 { padding-left: $size_m;}
+					&.h4 { padding-left: $size_m * 2;}
+					&.h5 { padding-left: $size_m * 3;}
+				}
+			}
 		}
 	}
 }
