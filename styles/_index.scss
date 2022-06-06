@@ -1,0 +1,117 @@
+@import "./parts/_articles.scss";
+
+/* Hero */
+#l-hero {
+	position: relative;
+	box-sizing: border-box;
+	padding: $size_ll $size_m;
+	min-width: calc($content_width + $size-m);
+	height: 350px;
+	@include media-sp {
+		height: auto;
+		padding: $size_m $size_s; 
+		min-width: inherit;
+	}
+	&:after {
+		content: '';
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('../../images/bookcafe.jpg');
+		background-size: cover;
+		filter: blur(1px);
+	}
+	.hero_content {
+		display: flex;
+		justify-content: space-around;
+		@include media-sp {
+			display: inherit;
+			width: 100%;
+		}
+	}
+	#intro {
+		margin: 0;
+		width: 500px;
+		@include media-sp {
+			width: 100%;
+		}
+		p {
+			span {
+				font-size: $font_ll;
+			}
+			margin: $space_ll 0;
+			padding: $space_l;
+			line-height: $font_lll;
+			color: $color_white;
+			background-color: rgba(0, 0, 0, .5);
+			@include media-sp {
+				margin: $size_ll 0 $size_s;
+			}
+		}
+	}
+	#info {
+		margin: 0 $size_m;
+		width: 500px;
+		@include media-sp {
+			width: 100%;
+			margin: 0;
+		}
+		ul {
+			margin: $space_l 0;
+			padding: 0;
+			li {
+				list-style-type: none;
+				padding: $space_m;
+				margin: 0 0 $space_m;
+				background-color: rgba(255, 255, 255, .9);
+				cursor: pointer;
+				transition: transform .2s;
+				i {
+					padding-right: $size-ss;
+				}
+				&:hover {
+					transform: scale(1.02);
+				}
+			}
+		}
+	}
+}
+
+#l-articles {
+	box-sizing: border-box;
+	padding: $size_l $size_m $size_ll;
+	min-width: calc($content_width + $size-m);
+	@include media-sp {
+		padding: $size_l $size_s;
+		min-width: inherit;
+	}
+	.heading {
+		display: flex;
+		justify-content: space-between;
+		padding: $size-s 0;
+		h3 {
+			span {
+				padding: 0 $size-s;
+				font-weight: normal;
+				@extend %font-title;
+				font-size: $font_s;
+			}
+			i {
+				padding-right: $size_s;
+			}
+		}
+		p {
+			@extend %font-default;
+			font-size: $size_m;
+			margin-right: $space_m;
+			padding: $size_ss 0 0;
+			i {
+				padding-right: $size_ss;
+			}
+		}
+	}
+	@extend %articles;
+}

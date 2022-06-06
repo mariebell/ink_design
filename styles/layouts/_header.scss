@@ -1,0 +1,90 @@
+header {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0, 72, 64, .9);
+	@include media-sp {
+		display: inherit;
+		min-width: inherit;
+	}
+	h1 {
+		margin: 0;
+		padding: $space_s;
+		padding-left: $space_m;
+		color: $color_white;
+		font-size: $font_lll;
+		font-weight: normal;
+		@extend %font-title;
+		span {
+			padding-left: $space_s;
+			font-size: $font_s;
+			@extend %font-heading;
+		}
+	}
+	.nav-icon {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: $font_lll;
+		color: $color_white;
+		padding: $size_s + $size_ss 0;
+		@include media-sp {
+			display: inherit;
+			label {
+				cursor: pointer;
+				padding: $size_s + $size_ss;
+			}
+		}
+	}
+	nav {
+		transition: color 1s;
+		input {
+			display: none;
+		}
+		ul {
+			display: flex;
+			margin: 0;
+			li {
+				padding: $space_m;
+				min-width: 100px;
+				text-align: center;
+				color: $color_white;
+				font-size: $font_s;
+				list-style-type: none;
+				cursor: pointer;
+				i {
+					margin-right: $space_ss;
+				}
+				&:hover {
+					transition: color .25s, background-color .25s;
+					background-color: $color_white;
+					color: $color_black;
+				}
+			}
+		}
+		@include media-sp {
+			input:checked + ul {
+					display: inherit;
+			}
+			ul {
+				margin-top: $size_s;
+				display: none;
+				padding-left: 0;
+				background-color: rgba(255, 255, 255, .85);
+				li {
+					width: 100%;
+					color: $color_black;
+					&:hover {
+						background-color: $color_main_darken;
+						color: $color_white;
+					}
+				}
+			}
+		}
+	}
+}
