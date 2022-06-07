@@ -3,11 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Norican&family=Zen+Maru+Gothic&display=swap');
 
 /* General Settings */
+$content_width: 1200px;
+$col_300: 300px;
+$col_400: 400px;
 %font-default { font-family: sans-serif; }
 %font-title { font-family: 'Norican', cursive; }
 %font-heading { font-family: 'Zen Maru Gothic', sans-serif; }
 %flex { display: flex; }
-
 body {
 	position: relative;
 	background-color: $color_base;
@@ -20,7 +22,7 @@ a {
 		color: $color_accent;
 	}
 }
-.content_wrapper {
+.content-wrapper {
 	width: $content_width;
 	margin: 0 auto;
 	@include media-sp {
@@ -28,11 +30,11 @@ a {
 	}
 }
 .shadow {
-	box-shadow: 0 $size-s $size-s hsla(0, 0%, 0%, .1);
+	box-shadow: 0 $size_s $size_s hsla(0, 0%, 0%, .1);
 }
 
 @import "./layouts/_header.scss";
 @import "./layouts/_footer.scss";
-@import "./_index.scss";
-@import "./_list.scss";
-@import "./_article.scss";
+@import "./pages/_index.scss";
+@import "./pages/_list.scss";
+@import "./pages/_article.scss";

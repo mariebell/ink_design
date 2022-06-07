@@ -1,13 +1,13 @@
-footer {
-	background-color: $color_main_darken;
+#l-footer {
 	box-sizing: border-box;
 	padding: $size_l + $size_m $size_m $size_ll;
-	min-width: calc($content_width + $size-m);
+	min-width: calc($content_width + $size_m);
+	background-color: $color_main_darken;
 	color: $color_white;
 	@include media-sp {
 		min-width: inherit;
 	}
-	.footer_content {
+	.footer-content {
 		display: flex;
 		@include media-sp {
 			display: inherit;
@@ -29,9 +29,9 @@ footer {
 	a {
 		color: $color_white;
 	}
-	.sns_icons {
+	.sns-icons {
 		list-style-type: none;
-		margin: $size-m 0;
+		margin: $size_m 0;
 		img {
 			width: 32px;
 			height: 32px;

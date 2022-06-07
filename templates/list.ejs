@@ -1,29 +1,14 @@
-<%- include('templates/head.ejs') -%>
-<header>
-	<h1>sagara.ink<span>半農半ITエンジニアのまとめノート</span></h1>
-	<div class="nav-icon">
-		<label for="sp-nav">
-			<i class="fa-solid fa-bars"></i>
-		</label>
-	</div>
-	<nav>
-		<input type="checkbox" id="sp-nav">
-		<ul>
-			<li><i class="fa-solid fa-code"></i>Web・アプリ開発</li>
-			<li><i class="fa-solid fa-seedling"></i>IoT・スマート農業</li>
-			<li><i class="fa-solid fa-book"></i>きまぐれ日誌</li>
-		</ul>
-	</nav>
-</header>
+<%- include('templates/parts/head.ejs') -%>
+<%- include('templates/parts/header.ejs') -%>
 <main>
 	<section id="l-title">
-		<div class="content_wrapper">
+		<div class="content-wrapper">
 			<h2>Web・アプリ開発の記事</h2>
 		</div>
 	</section>
 	<section id="l-list">
-		<div class="content_wrapper flexible">
-			<div class="l-articles">
+		<div class="content-wrapper flexible">
+			<div class="articles">
 				<h3>1ページ / タグ：Docker</h3>
 				<ul>
 					<li class="shadow">
@@ -76,7 +61,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="l-aside">
+			<div class="aside">
 				<h3>アーカイブ</h3>
 				<ul>
 					<li><a href="#">2022 (10)</a></li>
@@ -99,4 +84,4 @@
 		</div>
 	</section>
 </main>
-<%- include('templates/footer.ejs') -%>
+<%- include('templates/parts/footer.ejs') -%>
