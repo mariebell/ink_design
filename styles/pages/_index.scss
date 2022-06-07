@@ -1,11 +1,11 @@
-@import "./parts/_articles.scss";
+@import "../parts/_articles.scss";
 
 /* Hero */
 #l-hero {
 	position: relative;
 	box-sizing: border-box;
 	padding: $size_ll $size_m;
-	min-width: calc($content_width + $size-m);
+	min-width: calc($content_width + $size_m);
 	height: 350px;
 	@include media-sp {
 		height: auto;
@@ -32,7 +32,7 @@
 			width: 100%;
 		}
 	}
-	#intro {
+	.intro {
 		margin: 0;
 		width: 500px;
 		@include media-sp {
@@ -42,8 +42,8 @@
 			span {
 				font-size: $font_ll;
 			}
-			margin: $space_ll 0;
-			padding: $space_l;
+			margin: $size_ll 0;
+			padding: $size_l;
 			line-height: $font_lll;
 			color: $color_white;
 			background-color: rgba(0, 0, 0, .5);
@@ -52,7 +52,7 @@
 			}
 		}
 	}
-	#info {
+	.info {
 		margin: 0 $size_m;
 		width: 500px;
 		@include media-sp {
@@ -60,17 +60,17 @@
 			margin: 0;
 		}
 		ul {
-			margin: $space_l 0;
+			margin: $size_l 0;
 			padding: 0;
 			li {
 				list-style-type: none;
-				padding: $space_m;
-				margin: 0 0 $space_m;
+				padding: $size_m;
+				margin: 0 0 $size_m;
 				background-color: rgba(255, 255, 255, .9);
 				cursor: pointer;
 				transition: transform .2s;
 				i {
-					padding-right: $size-ss;
+					padding-right: $size_ss;
 				}
 				&:hover {
 					transform: scale(1.02);
@@ -83,7 +83,7 @@
 #l-articles {
 	box-sizing: border-box;
 	padding: $size_l $size_m $size_ll;
-	min-width: calc($content_width + $size-m);
+	min-width: calc($content_width + $size_m);
 	@include media-sp {
 		padding: $size_l $size_s;
 		min-width: inherit;
@@ -91,10 +91,10 @@
 	.heading {
 		display: flex;
 		justify-content: space-between;
-		padding: $size-s 0;
+		padding: $size_s 0;
 		h3 {
 			span {
-				padding: 0 $size-s;
+				padding: 0 $size_s;
 				font-weight: normal;
 				@extend %font-title;
 				font-size: $font_s;
@@ -106,12 +106,12 @@
 		p {
 			@extend %font-default;
 			font-size: $size_m;
-			margin-right: $space_m;
+			margin-right: $size_m;
 			padding: $size_ss 0 0;
 			i {
 				padding-right: $size_ss;
 			}
 		}
 	}
-	@extend %articles;
+	@extend %p-articles;
 }

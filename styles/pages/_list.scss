@@ -1,8 +1,8 @@
-@import "./parts/_articles.scss";
+@import "../parts/_articles.scss";
 
 #l-title {
 	box-sizing: border-box;
-	padding: $size_ll $size-m $size_m;
+	padding: $size_ll $size_m $size_m;
 	background-image: url('../../images/starbucks.jpg');
 	background-size: cover;
 	h2 {
@@ -12,10 +12,8 @@
 #l-list {
 	box-sizing: border-box;
 	padding: $size_l $size_m $size_ll;
-	// min-width: calc($content_width + $size-m);
 	@include media-sp {
 		padding: $size_l $size_s;
-		// min-width: inherit;
 	}
 	.flexible {
 		display: flex;
@@ -23,15 +21,15 @@
 			display: inherit;
 		}
 	}
-	.l-articles {
+	.articles {
 		box-sizing: border-box;
 		width: 900px;
-		@extend %articles;
+		@extend %p-articles;
 		@include media-sp {
 			width: 100%;
 		}
 	}
-	.l-aside {
+	.aside {
 		box-sizing: border-box;
 		width: 300px;
 		@include media-sp {

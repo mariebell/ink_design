@@ -1,4 +1,4 @@
-header {
+#l-header {
 	z-index: 10;
 	position: fixed;
 	top: 0;
@@ -13,14 +13,14 @@ header {
 	}
 	h1 {
 		margin: 0;
-		padding: $space_s;
-		padding-left: $space_m;
+		padding: $size_s;
+		padding-left: $size_m;
 		color: $color_white;
 		font-size: $font_lll;
 		font-weight: normal;
 		@extend %font-title;
 		span {
-			padding-left: $space_s;
+			padding-left: $size_s;
 			font-size: $font_s;
 			@extend %font-heading;
 		}
@@ -50,7 +50,7 @@ header {
 			display: flex;
 			margin: 0;
 			li {
-				padding: $space_m;
+				padding: $size_m;
 				min-width: 100px;
 				text-align: center;
 				color: $color_white;
@@ -58,7 +58,7 @@ header {
 				list-style-type: none;
 				cursor: pointer;
 				i {
-					margin-right: $space_ss;
+					margin-right: $size_ss;
 				}
 				&:hover {
 					transition: color .25s, background-color .25s;
@@ -69,7 +69,7 @@ header {
 		}
 		@include media-sp {
 			input:checked + ul {
-					display: inherit;
+				display: inherit;
 			}
 			ul {
 				margin-top: $size_s;
