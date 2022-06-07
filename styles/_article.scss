@@ -32,10 +32,18 @@
 			line-height: 2rem;
 			@extend %font-default;
 			@include media-sp {
-        width: 100%;
-        padding: $size-l $size-s;
+				width: 100%;
+				padding: $size-l $size-m;
 				border-radius: 0;
-    }
+			}
+			.published {
+				margin: 0;
+				font-size: $font_ss;
+				color: $color_main_lighten;
+				span {
+					color: $color_black;
+				}
+			}
 			.ad-in-article {
 				margin: $size_l 0 0;
 				height: 225px;
@@ -47,14 +55,14 @@
 			h1 {
         margin: 0;
         padding: $size-m 0;
-        border-top: 2px solid $color_main;
-        border-bottom: 2px solid $color_main;
+        border-top: 2px solid $color_main_lighten;
+        border-bottom: 2px solid $color_main_lighten;
         font-size: $font_lll;
 			}
 			h2 {
 					margin-top: $size-l;
 					padding: $size-m 0;
-					border-bottom: 3px double $color_main;
+					border-bottom: 3px double $color_main_lighten;
 					font-size: $font_ll;
 					&:before {
 							content: '■';
@@ -66,19 +74,19 @@
 			h3 {
 					margin-top: $size-l;
 					padding: $size-s 0;
-					border-bottom: 1px solid $color_main;
+					border-bottom: 1px solid $color_main_lighten;
 					font-size: $font_l;
 					&:before {
 							content: '■';
 							padding-right: $size_s;
-							color: $color_main;
+							color: $color_main_lighten;
 							font-size: $font_l;
 					}
 			}
 			h4 {
 					margin-top: $size-m;
 					padding: $size-ss 0;
-					border-bottom: 1px dotted $color_main;
+					border-bottom: 1px dotted $color_main_lighten;
 					font-size: $font_m;
 			}
 			h5 {
@@ -144,7 +152,7 @@
 		}
 		@include media-sp {
 			width: 100%;
-			padding: $size_m $size_s;
+			padding: $size_l $size_m;
 		}
 		.ad-in-aside {
 			margin-bottom: $size_m;

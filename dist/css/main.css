@@ -721,9 +721,17 @@ footer .sns_icons img:hover {
 @media screen and (max-width: 768px) {
   #l-article .l-main .article-content {
     width: 100%;
-    padding: 2rem 0.5rem;
+    padding: 2rem 1rem;
     border-radius: 0;
   }
+}
+#l-article .l-main .article-content .published {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #008080;
+}
+#l-article .l-main .article-content .published span {
+  color: #000000;
 }
 #l-article .l-main .article-content .ad-in-article {
   margin: 2rem 0 0;
@@ -738,14 +746,14 @@ footer .sns_icons img:hover {
 #l-article .l-main .article-content h1 {
   margin: 0;
   padding: 1rem 0;
-  border-top: 2px solid #004840;
-  border-bottom: 2px solid #004840;
+  border-top: 2px solid #008080;
+  border-bottom: 2px solid #008080;
   font-size: 1.4rem;
 }
 #l-article .l-main .article-content h2 {
   margin-top: 2rem;
   padding: 1rem 0;
-  border-bottom: 3px double #004840;
+  border-bottom: 3px double #008080;
   font-size: 1.2rem;
 }
 #l-article .l-main .article-content h2:before {
@@ -757,19 +765,19 @@ footer .sns_icons img:hover {
 #l-article .l-main .article-content h3 {
   margin-top: 2rem;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #004840;
+  border-bottom: 1px solid #008080;
   font-size: 1.1rem;
 }
 #l-article .l-main .article-content h3:before {
   content: "■";
   padding-right: 0.5rem;
-  color: #004840;
+  color: #008080;
   font-size: 1.1rem;
 }
 #l-article .l-main .article-content h4 {
   margin-top: 1rem;
   padding: 0.25rem 0;
-  border-bottom: 1px dotted #004840;
+  border-bottom: 1px dotted #008080;
   font-size: 1rem;
 }
 #l-article .l-main .article-content h5 {
@@ -833,7 +841,7 @@ footer .sns_icons img:hover {
 @media screen and (max-width: 768px) {
   #l-article .l-aside {
     width: 100%;
-    padding: 1rem 0.5rem;
+    padding: 2rem 1rem;
   }
 }
 #l-article .l-aside .ad-in-aside {
