@@ -4,9 +4,8 @@
 #l-hero {
 	position: relative;
 	box-sizing: border-box;
-	padding: $size_ll $size_m;
+	padding: $size_ll $size_m calc($size_ll - 50px);
 	min-width: calc($content_width + $size_m);
-	height: 350px;
 	@include media-tb {
 		height: auto;
 		padding: $size_m $size_s; 
@@ -84,6 +83,7 @@
 	box-sizing: border-box;
 	padding: $size_l $size_m $size_ll;
 	min-width: calc($content_width + $size_m);
+	background-color: $color_base;
 	@include media-tb {
 		padding: $size_l $size_s;
 		min-width: inherit;

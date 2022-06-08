@@ -393,6 +393,9 @@ a:hover {
 #l-footer a {
   color: #FFFFFF;
 }
+#l-footer i {
+  margin-right: 0.25rem;
+}
 #l-footer .sns-icons {
   list-style-type: none;
   margin: 1rem 0;
@@ -429,10 +432,17 @@ a:hover {
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
 }
+#l-list .articles ul li a, #l-articles ul li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media screen and (max-width: 768px) {
   #l-list .articles ul li, #l-articles ul li {
     margin: 0 0 1rem;
-    width: calc(50% - 0.25rem);
+    width: calc(50% - 0.5rem);
   }
   #l-list .articles ul li:nth-child(odd), #l-articles ul li:nth-child(odd) {
     margin-right: 0.5rem;
@@ -454,6 +464,7 @@ a:hover {
   border-top: 1px solid #008080;
   border-bottom: 1px solid #008080;
   font-size: 1rem;
+  color: #000000;
 }
 #l-list .articles ul li span, #l-articles ul li span {
   color: #008080;
@@ -474,9 +485,8 @@ a:hover {
 #l-hero {
   position: relative;
   box-sizing: border-box;
-  padding: 4rem 1rem;
+  padding: 4rem 1rem calc(4rem - 50px);
   min-width: calc(1200px + 1rem);
-  height: 350px;
 }
 @media screen and (max-width: 768px) {
   #l-hero {
@@ -564,6 +574,7 @@ a:hover {
   box-sizing: border-box;
   padding: 2rem 1rem 4rem;
   min-width: calc(1200px + 1rem);
+  background-color: #F7F7F0;
 }
 @media screen and (max-width: 768px) {
   #l-articles {
@@ -615,10 +626,17 @@ a:hover {
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
 }
+#l-list .articles ul li a, #l-articles ul li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media screen and (max-width: 768px) {
   #l-list .articles ul li, #l-articles ul li {
     margin: 0 0 1rem;
-    width: calc(50% - 0.25rem);
+    width: calc(50% - 0.5rem);
   }
   #l-list .articles ul li:nth-child(odd), #l-articles ul li:nth-child(odd) {
     margin-right: 0.5rem;
@@ -640,6 +658,7 @@ a:hover {
   border-top: 1px solid #008080;
   border-bottom: 1px solid #008080;
   font-size: 1rem;
+  color: #000000;
 }
 #l-list .articles ul li span, #l-articles ul li span {
   color: #008080;
