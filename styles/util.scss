@@ -124,7 +124,17 @@ $size_ll: 4rem;
  * http://bashalog.c-brains.jp/19/07/29-170136.php
  */
 @mixin media-sp {
+    @media screen and (max-width: 400px) {
+      @content;
+    }
+}
+@mixin media-tb {
     @media screen and (max-width: 768px) {
+      @content;
+    }
+}
+@mixin media-tb-only {
+    @media screen and (min-width: 401px) and (max-width: 768px) {
       @content;
     }
 }

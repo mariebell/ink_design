@@ -257,7 +257,7 @@ a:hover {
   height: 50px;
   background-color: rgba(0, 72, 64, 0.9);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   #l-header {
     display: inherit;
     min-width: inherit;
@@ -275,6 +275,11 @@ a:hover {
   padding-left: 0.5rem;
   font-size: 0.9rem;
 }
+@media screen and (max-width: 768px) {
+  #l-header h1 span {
+    display: none;
+  }
+}
 #l-header .nav-icon {
   display: none;
   position: absolute;
@@ -284,7 +289,7 @@ a:hover {
   color: #FFFFFF;
   padding: 0.75rem 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   #l-header .nav-icon {
     display: inherit;
   }
@@ -320,7 +325,15 @@ a:hover {
   background-color: #FFFFFF;
   color: #000000;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 401px) and (max-width: 768px) {
+  #l-header nav ul li {
+    padding: 1rem 0.1rem;
+  }
+  #l-header nav ul li span {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
   #l-header nav input:checked + ul {
     display: inherit;
   }
@@ -418,8 +431,17 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   #l-list .articles ul li, #l-articles ul li {
-    width: 100%;
+    margin: 0 0 1rem;
+    width: calc(50% - 0.25rem);
+  }
+  #l-list .articles ul li:nth-child(odd), #l-articles ul li:nth-child(odd) {
+    margin-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #l-list .articles ul li, #l-articles ul li {
     margin: 0 0 1rem 0;
+    width: 100%;
   }
 }
 #l-list .articles ul li:hover, #l-articles ul li:hover {
@@ -595,8 +617,17 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   #l-list .articles ul li, #l-articles ul li {
-    width: 100%;
+    margin: 0 0 1rem;
+    width: calc(50% - 0.25rem);
+  }
+  #l-list .articles ul li:nth-child(odd), #l-articles ul li:nth-child(odd) {
+    margin-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #l-list .articles ul li, #l-articles ul li {
     margin: 0 0 1rem 0;
+    width: 100%;
   }
 }
 #l-list .articles ul li:hover, #l-articles ul li:hover {
@@ -735,7 +766,7 @@ a:hover {
   height: 225px;
   border: 1px solid purple;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   #l-article #l-main .article-content .ad-in-article {
     margin: 1rem 0 0;
   }

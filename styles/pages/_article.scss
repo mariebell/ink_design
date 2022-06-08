@@ -1,18 +1,18 @@
 #l-article {
 	box-sizing: border-box;
 	padding: $size_l $size_m $size_ll;
-	@include media-sp {
+	@include media-tb {
 		padding: 0;
 	}
 	.title {
 		height: $size_ll;
-		@include media-sp {
+		@include media-tb {
 			height: 50px;
 		}
 	}
 	.flexible {
 		display: flex;
-		@include media-sp {
+		@include media-tb {
 			display: inherit;
 		}
 	}
@@ -21,7 +21,7 @@
 #l-article #l-main {
 	box-sizing: border-box;
 	width: 800px;
-	@include media-sp {
+	@include media-tb {
 		width: 100%;
 	}
 	.article-content {
@@ -33,7 +33,7 @@
 		border-radius: $size_s;
 		line-height: 2rem;
 		@extend %font-default;
-		@include media-sp {
+		@include media-tb {
 			width: 100%;
 			padding: $size_l $size_m;
 			border-radius: 0;
@@ -148,7 +148,7 @@
 	box-sizing: border-box;
 	width: 400px;
 	padding: 0 $size_l;
-	@include media-sp {
+	@include media-tb {
 		width: 100%;
 		padding: $size_l $size_m;
 	}
@@ -167,7 +167,7 @@
 		border: 1px solid $color_light;
 		border-right: 0;
 		overflow-y: scroll;
-		@include media-sp {
+		@include media-tb {
 			display: none;
 		}
 		ul {

@@ -23,6 +23,9 @@
 			padding-left: $size_s;
 			font-size: $font_s;
 			@extend %font-heading;
+			@include media-tb {
+				display: none;
+			}
 		}
 	}
 	.nav-icon {
@@ -64,6 +67,12 @@
 					transition: color .25s, background-color .25s;
 					background-color: $color_white;
 					color: $color_black;
+				}
+				@include media-tb-only {
+					padding: $size_m $size_sss;
+					span {
+						display: none;
+					}
 				}
 			}
 		}

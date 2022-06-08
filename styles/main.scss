@@ -25,7 +25,7 @@ a {
 .content-wrapper {
 	width: $content_width;
 	margin: 0 auto;
-	@include media-sp {
+	@include media-tb {
 		width: 100%;
 	}
 }

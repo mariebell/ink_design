@@ -5,7 +5,7 @@
 		margin: 0;
 		padding: 0;
 		@extend %font-default;
-		@include media-sp {
+		@include media-tb {
 			width: 100%;
 		}
 		li {
@@ -18,9 +18,16 @@
 			list-style-type: none;
 			transition: transform .2s, box-shadow .2s;
 			cursor: pointer;
+			@include media-tb {
+				margin: 0 0 $size_m;
+				width: calc(50% - $size_ss);
+				&:nth-child(odd) {
+					margin-right: $size_s;
+				}
+			}
 			@include media-sp {
-				width: 100%;
 				margin: 0 0 $size_m 0;
+				width: 100%;
 			}
 			&:hover {
 				transform: scale(1.02);

@@ -4,12 +4,12 @@
 	min-width: calc($content_width + $size_m);
 	background-color: $color_main_darken;
 	color: $color_white;
-	@include media-sp {
+	@include media-tb {
 		min-width: inherit;
 	}
 	.footer-content {
 		display: flex;
-		@include media-sp {
+		@include media-tb {
 			display: inherit;
 		}
 	}
@@ -17,11 +17,11 @@
 		width: 300px;
 		&:first-child {
 			width: 600px;
-			@include media-sp {
+			@include media-tb {
 				width: 100%;
 			}
 		}
-		@include media-sp {
+		@include media-tb {
 			width: 100%;
 			padding-bottom: $size_s;
 		}

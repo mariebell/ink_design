@@ -12,12 +12,12 @@
 #l-list {
 	box-sizing: border-box;
 	padding: $size_l $size_m $size_ll;
-	@include media-sp {
+	@include media-tb {
 		padding: $size_l $size_s;
 	}
 	.flexible {
 		display: flex;
-		@include media-sp {
+		@include media-tb {
 			display: inherit;
 		}
 	}
@@ -25,14 +25,14 @@
 		box-sizing: border-box;
 		width: 900px;
 		@extend %p-articles;
-		@include media-sp {
+		@include media-tb {
 			width: 100%;
 		}
 	}
 	.aside {
 		box-sizing: border-box;
 		width: 300px;
-		@include media-sp {
+		@include media-tb {
 			width: 100%;
 		}
 	}

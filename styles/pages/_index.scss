@@ -7,7 +7,7 @@
 	padding: $size_ll $size_m;
 	min-width: calc($content_width + $size_m);
 	height: 350px;
-	@include media-sp {
+	@include media-tb {
 		height: auto;
 		padding: $size_m $size_s; 
 		min-width: inherit;
@@ -27,7 +27,7 @@
 	.hero_content {
 		display: flex;
 		justify-content: space-around;
-		@include media-sp {
+		@include media-tb {
 			display: inherit;
 			width: 100%;
 		}
@@ -35,7 +35,7 @@
 	.intro {
 		margin: 0;
 		width: 500px;
-		@include media-sp {
+		@include media-tb {
 			width: 100%;
 		}
 		p {
@@ -47,7 +47,7 @@
 			line-height: $font_lll;
 			color: $color_white;
 			background-color: rgba(0, 0, 0, .5);
-			@include media-sp {
+			@include media-tb {
 				margin: $size_ll 0 $size_s;
 			}
 		}
@@ -55,7 +55,7 @@
 	.info {
 		margin: 0 $size_m;
 		width: 500px;
-		@include media-sp {
+		@include media-tb {
 			width: 100%;
 			margin: 0;
 		}
@@ -84,7 +84,7 @@
 	box-sizing: border-box;
 	padding: $size_l $size_m $size_ll;
 	min-width: calc($content_width + $size_m);
-	@include media-sp {
+	@include media-tb {
 		padding: $size_l $size_s;
 		min-width: inherit;
 	}
